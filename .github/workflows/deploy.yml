@@ -33,8 +33,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: SPA fallback for client-side routing
-        run: cp dist/index.html dist/404.html
+      - name: Static routes for GitHub Pages (real 200s, no client-only rewrites)
+        run: |
+          for route in about services contact privacy terms refund disclaimer; do
+            mkdir -p "dist/$route"
+            cp dist/index.html "dist/$route/index.html"
+          done
+          cp dist/index.html dist/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
