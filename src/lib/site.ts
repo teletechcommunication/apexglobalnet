@@ -1,8 +1,7 @@
 export const SITE_URL = "https://apexglobalnet.com";
 
-// TODO: replace with the real business phone number once available.
-export const PHONE_DISPLAY = "xxx-xxx-xxxx";
-export const PHONE_HREF = "tel:";
+export const PHONE_DISPLAY = "(866) 381-6479";
+export const PHONE_HREF = "tel:+18663816479";
 
 export function canonical(path: string) {
   return { rel: "canonical", href: `${SITE_URL}${path}` };

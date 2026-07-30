@@ -7,7 +7,7 @@ import {
   HeadContent,
 } from "@tanstack/react-router";
 
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, PHONE_HREF } from "@/lib/site";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -37,8 +37,10 @@ const localBusinessSchema = {
   email: "hello@apexglobalnet.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "500 Fiber Ave, Suite 300",
+    addressLocality: "Chandigarh",
+    addressCountry: "IN",
   },
+  telephone: PHONE_HREF.replace("tel:", ""),
 };
 
 function NotFoundComponent() {

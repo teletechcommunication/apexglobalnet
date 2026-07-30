@@ -11,7 +11,7 @@ import { Footer } from "@/components/site/Footer";
 import { Reveal } from "@/components/site/Reveal";
 import { Counter } from "@/components/site/Counter";
 import { SectionHeading } from "@/components/site/SectionHeading";
-import { canonical, PHONE_HREF } from "@/lib/site";
+import { canonical, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 import { trackEvent } from "@/lib/analytics";
 
 import heroFamily from "@/assets/family-streaming-internet-connection.webp";
@@ -96,7 +96,7 @@ function Hero() {
                 Check Availability <ArrowRight className="h-4 w-4" />
               </a>
               <a href={PHONE_HREF} onClick={() => trackEvent("phone_click", { location: "hero" })} className="btn-ghost-light inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold">
-                <Phone className="h-4 w-4" /> Speak to an Expert
+                <Phone className="h-4 w-4" /> Speak to an Expert: {PHONE_DISPLAY}
               </a>
             </div>
 
@@ -690,7 +690,7 @@ function FinalCTA() {
                   Check Availability <ArrowRight className="h-4 w-4" />
                 </a>
                 <a href={PHONE_HREF} onClick={() => trackEvent("phone_click", { location: "final_cta" })} className="btn-ghost-light inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold">
-                  <Phone className="h-4 w-4" /> Call Now
+                  <Phone className="h-4 w-4" /> Call Now: {PHONE_DISPLAY}
                 </a>
               </div>
             </div>

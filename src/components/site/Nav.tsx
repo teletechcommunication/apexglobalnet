@@ -80,7 +80,7 @@ export function Nav({ solid = false }: { solid?: boolean }) {
             onClick={() => trackEvent("phone_click", { location: "nav" })}
             className="btn-cta inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold"
           >
-            <Phone className="h-4 w-4" /> Call Now
+            <Phone className="h-4 w-4" /> Call Now: {PHONE_DISPLAY}
           </a>
         </div>
 
@@ -109,7 +109,7 @@ export function Nav({ solid = false }: { solid?: boolean }) {
             )}
             <div className="flex gap-2 pt-3">
               <a href="#check" onClick={() => setOpen(false)} className="flex-1 text-center px-4 py-2.5 rounded-full bg-navy text-white text-sm font-semibold">Check Availability</a>
-              <a href={PHONE_HREF} onClick={() => trackEvent("phone_click", { location: "nav_mobile" })} className="flex-1 text-center btn-cta px-4 py-2.5 rounded-full text-sm font-semibold">Call Now</a>
+              <a href={PHONE_HREF} onClick={() => trackEvent("phone_click", { location: "nav_mobile" })} className="flex-1 text-center btn-cta px-4 py-2.5 rounded-full text-sm font-semibold">Call Now: {PHONE_DISPLAY}</a>
             </div>
           </div>
         </div>

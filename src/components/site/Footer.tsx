@@ -19,9 +19,9 @@ export function Footer() {
               We help households and businesses explore broadband and cable connection options available in their location with dedicated guidance from start to finish.
             </p>
             <div className="mt-6 space-y-2.5 text-sm text-white/80">
-              <div className="flex items-center gap-3"><Phone className="h-4 w-4 text-cyan-brand" /> {PHONE_DISPLAY}</div>
+              <div className="flex items-center gap-3"><Phone className="h-4 w-4 text-cyan-brand" /> Toll Free: {PHONE_DISPLAY}</div>
               <div className="flex items-center gap-3"><Mail className="h-4 w-4 text-cyan-brand" /> hello@apexglobalnet.com</div>
-              <div className="flex items-center gap-3"><MapPin className="h-4 w-4 text-cyan-brand" /> 500 Fiber Ave, Suite 300</div>
+              <div className="flex items-center gap-3"><MapPin className="h-4 w-4 text-cyan-brand" /> Chandigarh, India</div>
             </div>
             <div className="mt-6 flex gap-2">
               {[Facebook, Twitter, Instagram, Linkedin, Youtube].map((Icon, i) => (

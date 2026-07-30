@@ -38,9 +38,9 @@ function ContactPage() {
         <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-2 gap-10">
           <div className="space-y-4">
             {[
-              { icon: Phone, title: "Call", value: PHONE_DISPLAY },
+              { icon: Phone, title: "Toll Free", value: PHONE_DISPLAY },
               { icon: Mail, title: "Email", value: "hello@apexglobalnet.com" },
-              { icon: MapPin, title: "Office", value: "500 Fiber Avenue, Suite 300" },
+              { icon: MapPin, title: "Chandigarh Office", value: "Chandigarh, India" },
             ].map((c) => (
               <div key={c.title} className="flex items-center gap-4 rounded-2xl bg-surface border border-border p-5">
                 <div className="h-12 w-12 rounded-xl bg-[var(--gradient-cyan)] grid place-items-center text-white">
