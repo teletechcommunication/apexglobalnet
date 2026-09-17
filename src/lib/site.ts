@@ -3,6 +3,9 @@ export const SITE_URL = "https://apexglobalnet.com";
 export const PHONE_DISPLAY = "(866) 381-6479";
 export const PHONE_HREF = "tel:+18663816479";
 
+export const PHONE_DISPLAY_2 = "(888) 227-0355";
+export const PHONE_HREF_2 = "tel:+18882270355";
+
 export function canonical(path: string) {
   return { rel: "canonical", href: `${SITE_URL}${path}` };
 }

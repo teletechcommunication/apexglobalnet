@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter, Youtube } from "lucide-react";
-import { PHONE_DISPLAY } from "@/lib/site";
+import { PHONE_DISPLAY, PHONE_DISPLAY_2 } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -20,6 +20,7 @@ export function Footer() {
             </p>
             <div className="mt-6 space-y-2.5 text-sm text-white/80">
               <div className="flex items-center gap-3"><Phone className="h-4 w-4 text-cyan-brand" /> Toll Free: {PHONE_DISPLAY}</div>
+              <div className="flex items-center gap-3"><Phone className="h-4 w-4 text-cyan-brand" /> Toll Free: {PHONE_DISPLAY_2}</div>
               <div className="flex items-center gap-3"><Mail className="h-4 w-4 text-cyan-brand" /> hello@apexglobalnet.com</div>
               <div className="flex items-center gap-3"><MapPin className="h-4 w-4 text-cyan-brand" /> Chandigarh, India</div>
             </div>
