@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
-import { canonical, breadcrumbSchema, PHONE_DISPLAY, PHONE_DISPLAY_2 } from "@/lib/site";
+import { canonical, breadcrumbSchema, PHONE_DISPLAY } from "@/lib/site";
 import { trackEvent } from "@/lib/analytics";
 
 export const Route = createFileRoute("/contact")({
@@ -39,7 +39,6 @@ function ContactPage() {
           <div className="space-y-4">
             {[
               { icon: Phone, title: "Toll Free", value: PHONE_DISPLAY },
-              { icon: Phone, title: "Toll Free", value: PHONE_DISPLAY_2 },
               { icon: Mail, title: "Email", value: "hello@apexglobalnet.com" },
               { icon: MapPin, title: "Chandigarh Office", value: "Chandigarh, India" },
             ].map((c) => (
