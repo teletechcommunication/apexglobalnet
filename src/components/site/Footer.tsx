@@ -52,6 +52,7 @@ export function Footer() {
             { label: "Terms & Conditions", to: "/terms" },
             { label: "Refund Policy", to: "/refund" },
             { label: "Disclaimer", to: "/disclaimer" },
+            { label: "Advertising Disclosure", to: "/advertising-disclosure" },
             { label: "Contact", to: "/contact" },
           ]} />
         </div>
